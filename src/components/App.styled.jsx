@@ -10,5 +10,5 @@ export const Container = styled.div`
   height: calc(100vh - 80px);
   margin: 0 auto;
   padding: 20px;
-  color: DarkSlateGray;
+  color: #abb8b8;
 `;

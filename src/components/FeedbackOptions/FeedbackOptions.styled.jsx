@@ -3,12 +3,13 @@ import styled from '@emotion/styled';
 export const FeedbackList = styled.ul`
   display: flex;
   gap: 10px;
+  list-style-type: none;
 `;
 
 export const FeedbackBtn = styled.button`
   padding: 5px 10px;
-  border: 1px solid gray;
-  border-radius: 5px;
+  border: 3px solid #444444;
+  border-radius: 8px;
   background-color: ${({ children }) => {
     switch (children) {
       case 'good':
@@ -19,7 +20,7 @@ export const FeedbackBtn = styled.button`
         return 'gray';
     }
   }};
-  color: #ffffff;
+  color: 	#000000;
   font-weight: 700;
   cursor: pointer;
   opacity: 0.8;
@@ -32,6 +33,6 @@ export const FeedbackBtn = styled.button`
   &:hover,
   &:focus {
     opacity: 1;
-    box-shadow: 0px 2px 8px -4px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 2px 8px -4px rgba(0, 0, 0, 0.8);
   }
 `;
